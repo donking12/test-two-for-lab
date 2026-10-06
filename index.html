@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0d9488">
+<title>Welcome - Test 2</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem 1.25rem;
+    text-align: center;
+    color: #f8fafc;
+    font-family: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: linear-gradient(135deg, #042f2e 0%, #0d9488 55%, #4f46e5 100%);
+  }
+
+  .badge {
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.45rem 1rem;
+    border-radius: 999px;
+    color: #99f6e4;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    animation: rise 0.7s ease both;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: clamp(2.6rem, 10vw, 5.5rem);
+    font-weight: 800;
+    line-height: 1.05;
+    background: linear-gradient(120deg, #ffffff 0%, #a7f3d0 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rise 0.7s ease 0.05s both;
+  }
+
+  .hello-ar {
+    margin: 0;
+    font-size: clamp(1.6rem, 6vw, 3rem);
+    font-weight: 700;
+    color: #99f6e4;
+    animation: rise 0.7s ease 0.12s both;
+  }
+
+  p.lead {
+    margin: 0;
+    max-width: 34rem;
+    font-size: clamp(1rem, 2.6vw, 1.2rem);
+    line-height: 1.7;
+    opacity: 0.92;
+    animation: rise 0.7s ease 0.2s both;
+  }
+
+  .card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+    backdrop-filter: blur(10px);
+    font-size: 0.95rem;
+    animation: rise 0.7s ease 0.28s both;
+  }
+  .card strong { color: #99f6e4; }
+
+  footer {
+    margin-top: 1rem;
+    font-size: 0.82rem;
+    opacity: 0.75;
+    animation: rise 0.7s ease 0.36s both;
+  }
+  footer a { color: #99f6e4; }
+
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; }
+  }
+</style>
+</head>
+<body>
+  <span class="badge">labs.ly &middot; test 2</span>
+  <h1>Welcome</h1>
+  <p class="hello-ar" dir="rtl" lang="ar">أهلاً وسهلاً</p>
+  <p class="lead">
+    This is a simple welcome page. It is the target of a labs.ly subdomain
+    entry used to test the platform end to end.
+  </p>
+  <div class="card">
+    Served at <strong>test2.labs.ly</strong> once the entry file is merged.
+  </div>
+  <footer>
+    Test project &middot; <a href="https://github.com/donking12/LABS" rel="noopener" target="_blank">donking12/LABS</a>
+  </footer>
+</body>
+</html>
